@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function userName(fname, lname) {
+        var a =fname[0].toUpperCase() + fname.slice(1) + " " +
+          lname[0].toUpperCase() + lname.slice(1);
+        return a;
+      }
+      document.write(userName("hamza", "zaman"));
+
+      function table(T, L) {
+        var arr = [];
+        for(var i = 1 ; i<= L;i++){
+          arr.push(`${T} x ${i} = ${T * i}`)
+        }
+        return arr.join('<br>')
+      }
+      document.write(table(prompt('table'),prompt('table length')));
+    </script>
+  </body>
+</html>
